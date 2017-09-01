@@ -1,3 +1,5 @@
+package BinatryTree;
+
 import java.util.Stack;
 
 /**
@@ -6,19 +8,20 @@ import java.util.Stack;
 public class BinaryTree {
     private Node root;
 
-
+    public BinaryTree(){}
     public BinaryTree(int key,String data){
         root = new Node(key,data);
     }
 
 
-    private static class Node {
+    static class Node {
         Node leftChild = null;
         Node rightChild = null;
         boolean isVisited = false;
         int key = 0;
         String data = null;
 
+        public Node(){}
 
         public Node(int newKey, String newData){
             leftChild = null;

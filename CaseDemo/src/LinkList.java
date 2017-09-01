@@ -130,8 +130,6 @@ public class LinkList {
         }
 
         return false;
-
-
     }
 
     class Node{
